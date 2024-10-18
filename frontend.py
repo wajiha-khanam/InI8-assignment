@@ -1,8 +1,9 @@
 import streamlit as st
 import requests
-import json
+from datetime import datetime
 
 
+current_year = datetime.now().year
 API_URL = 'http://127.0.0.1:5000'
 
 # Streamlit App
@@ -13,7 +14,7 @@ st.title("Registration System")
 st.header("Create a New Registration")
 name = st.text_input("Name")
 email = st.text_input("Email")
-dob = st.date_input("Date of Birth")
+dob = st.date_input("Date of Birth", min_value=datetime(current_year - 100, 1, 1), max_value=datetime.now())
 phone = st.text_input("Phone Number (optional)")
 address = st.text_input("Address (optional)")
 
