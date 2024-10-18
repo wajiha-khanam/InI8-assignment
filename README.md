@@ -9,8 +9,7 @@ A simple web-based registration system built using Flask for the backend and Str
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -27,21 +26,17 @@ A simple web-based registration system built using Flask for the backend and Str
 
 ## Setup Instructions
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/registration-system.git
-   cd registration-system
-2. **Install Required Packages: Make sure to install Flask, Flask-SQLAlchemy, Streamlit, and requests**:
+1. **Install Required Packages: Make sure to install Flask, Flask-SQLAlchemy, Streamlit, and requests**:
    ```bash
    pip install Flask Flask-SQLAlchemy Streamlit requests psycopg2-binary
-3. **Set Up PostgreSQL Database**:
+2. **Set Up PostgreSQL Database**:
    * Ensure PostgreSQL is installed and running.
    * Create a database named registration_db.
    * Update the connection string in your Flask app to match your PostgreSQL setup.
-4. **Run the Flask Backend**:
+3. **Run the Flask Backend**:
    ```bash
    python your_flask_app.py
-5. **Run the Streamlit Frontend: In a separate terminal, run**:
+4. **Run the Streamlit Frontend: In a separate terminal, run**:
    ```bash
    streamlit run your_streamlit_app.py
 
